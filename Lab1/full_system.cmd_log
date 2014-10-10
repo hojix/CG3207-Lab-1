@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/GitHub/CG3207-Lab-1/Lab1/full_system.xst" -ofn "D:/GitHub/CG3207-Lab-1/Lab1/full_system.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GitHub/CG3207-Lab-1/src/full_system_ucf.ucf -p xc7a100t-csg324-1 full_system.ngc full_system.ngd  
+map -intstyle ise -p xc7a100t-csg324-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o full_system_map.ncd full_system.ngd full_system.pcf 
+par -w -intstyle ise -ol high -mt off full_system_map.ncd full_system.ncd full_system.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml full_system.twx full_system.ncd -o full_system.twr full_system.pcf 
+bitgen -intstyle ise -f full_system.ut full_system.ncd 

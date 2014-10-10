@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\GitHub\CG3207-Lab-1\Lab1\full_system.ncd
+OUTFILE=D:\GitHub\CG3207-Lab-1\Lab1\full_system.bit
+FAMILY=Artix7
+PART=xc7a100t-1csg324
+WORKINGDIR=D:\GitHub\CG3207-Lab-1\Lab1
+LICENSE=WebPack
+USER_INFO=210930072_0_0_340

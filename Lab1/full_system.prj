@@ -1,0 +1,7 @@
+vhdl work "../src/state_machine.vhd"
+vhdl work "../src/rom.vhd"
+vhdl work "../src/display.vhd"
+vhdl work "../src/counter.vhd"
+vhdl work "../src/comparator.vhd"
+vhdl work "../src/addsub.vhd"
+vhdl work "../src/full_system.vhd"
